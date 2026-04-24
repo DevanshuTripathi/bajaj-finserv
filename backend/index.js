@@ -5,6 +5,10 @@ const app = express();
 app.use(cors()); 
 app.use(express.json()); 
 
+app.get("/ping", (req, res) => {
+    res.send("pong");
+});
+
 app.post('/bfhl', (req, res) => {
     const rawData = req.body.data || [];
     const invalid_entries = [];
