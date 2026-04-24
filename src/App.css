@@ -1,38 +1,111 @@
-.App {
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.title {
+  margin-bottom: 1rem;
+}
+
+.textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  border: none;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.error {
+  color: #d32f2f;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.result-container {
+  margin-top: 2rem;
+}
+
+.summary {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #f4f4f4;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tree-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fafafa;
+  margin-bottom: 1rem;
+  border: 1px solid #eee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.meta {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.raw {
+  background: #111;
+  color: #00ff00;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: monospace;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle-btn {
+  margin-right: 0.5rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.active-toggle {
+  margin-right: 0.5rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.user-info {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.user-info .card {
+  background: #e8f0fe;
 }
